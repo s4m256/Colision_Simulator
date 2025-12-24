@@ -30,3 +30,7 @@ function draw() {
         particle.draw()
     }
 }
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
+}
