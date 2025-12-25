@@ -32,7 +32,7 @@ class Particle {
 
         if (speed <= 0) return;
 
-        let impulse = (2 * speed) / (1 / this.mass + 1 / particle.mass); 
+        let impulse = ((1 + e) * speed) / (1 / this.mass + 1 / particle.mass); 
         let impulseVec = normal.copy().mult(impulse);
 
         this.velocity.sub(p5.Vector.mult(impulseVec, 1 / this.mass));
